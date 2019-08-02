@@ -6,8 +6,6 @@ for generating bvh files, aligning sequences and calculation of speech features
 
 import ctypes
 
-import librosa
-import librosa.display
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -219,34 +217,6 @@ def extract_prosodic_features(audio_filename):
     pros_feature = np.transpose(pros_feature)
 
     return pros_feature
-
-
-def calculate_spectrogram(audio_filename):
-    """ Calculate spectrogram for the audio file
-    Args:
-        audio_filename: audio file name
-    Returns:
-        log spectrogram values
-    """
-
-    DIM = 64
-
-    fs, audio = wav.read(audio_filename)
-    # Make stereo audio being mono
-    if len(audio.shape) == 2:
-        audio = (audio[:, 0] + audio[:, 1]) / 2
-
-    spectr = librosa.feature.melspectrogram(audio, sr=fs, hop_length=44*WINDOW_LENGTH,
-                                            fmax=8000, fmin=20, n_mels=DIM)
-
-    # Reduce dimensionality
-    spectr = np.array([average(spectr[freq], SUBSAMPL_RATE) for freq in range(DIM)])
-
-    eps = 1e-10
-    log_spectr = np.log(abs(spectr)+eps)
-
-    return np.transpose(log_spectr)
-
 
 
 if __name__ == "__main__":

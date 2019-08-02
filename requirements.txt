@@ -1,0 +1,11 @@
+setuptools==41.0.0
+numpy
+matplotlib
+pandas
+pydub
+scipy
+tensorflow
+keras
+python_speech_features
+praat-parselmouth
+pyquaternion
