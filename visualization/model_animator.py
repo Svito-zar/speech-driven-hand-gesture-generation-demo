@@ -33,15 +33,6 @@ class ModelSkeletons:
     def getSkeletons(self):
         return self.skeletons
 
-    def smoothing(self, motion):
-
-        smoothed = [savgol_filter(motion[:,i], 7, 3) for i in range(motion.shape[1])]
-
-        new_motion = np.array(smoothed).transpose()
-
-        return new_motion
-
-
     def plotSkeletonT(self, skelet):
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')

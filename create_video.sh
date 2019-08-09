@@ -8,7 +8,7 @@ fi
 # Set params
 input_audio=$1
 input_gesture_file=$2
-output_video='Gesture_Video.mp4'
+output_video='result/Gesture_Video.mp4'
 
 # Generate video for gestures from the 3d position
 python visualization/model_animator.py --input=$input_gesture_file --out='data/temp_gesture_video.mp4'

@@ -305,7 +305,7 @@ def load_dae(shape, args):
 
 def smoothing(motion):
 
-    smoothed = [savgol_filter(motion[:,i], 7, 3) for i in range(motion.shape[1])]
+    smoothed = [savgol_filter(motion[:,i], 9, 3) for i in range(motion.shape[1])]
 
     new_motion = np.array(smoothed).transpose()
 

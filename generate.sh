@@ -18,4 +18,4 @@ echo "Creating a video with this motion and audio ..."
 ./create_video.sh $input_audio result/gestures.txt
 
 echo "The gestures 3D coordinates were written in the file 'result/gestures.txt'"
-echo "The video with the produced gestures was written in the file 'Gesture_Video.mp4'"
+echo "The video with the produced gestures was written in the file 'result/Gesture_Video.mp4'"

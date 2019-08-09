@@ -7,8 +7,9 @@ For more information about the dataset used we refer to the Trinity Speech-Gestu
 ## Requirements
 *  python 3
 
-## Installation
+## Install dependencies
 ```
+pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
