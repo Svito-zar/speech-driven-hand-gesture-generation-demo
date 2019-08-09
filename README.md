@@ -5,7 +5,8 @@ If you want to learn more about the model - this [video](https://youtu.be/Iv7UBe
 For more information about the dataset used we refer to the Trinity Speech-Gesture dataset [website](https://trinityspeechgesture.scss.tcd.ie/)
 
 ## Requirements
-*  python 3
+* python 3
+* ffmpeg (to visualize the results)
 
 ## Install dependencies
 ```
@@ -15,10 +16,11 @@ pip install -r requirements.txt
 
 ## Usage
 ```
-./generate.sh <audio_file>
+./generate.sh  data/audio*.wav
 ```
-Where in place of `<audio_file>` you can use any file from the folder `data` or download more [audios](https://trinityspeechgesture.scss.tcd.ie/Audio/) for testing from the dataset.
-(We did not use recordings 'NaturalTalking_01.wav' and 'NaturalTalking_02.wav' during training and left them for testing)
+Where in place of `audio*.wav` you can use any file from the folder `data`, which are chunks of the test sequences.
+ Alternatively, you can download more [audios](https://trinityspeechgesture.scss.tcd.ie/Audio/) for testing from the dataset.
+(The recordings 'NaturalTalking_01.wav' and 'NaturalTalking_02.wav' were not used in training and were left them for testing)
 
 ## Training on your own data
 For training on your own data we refer you to the [original repository](https://github.com/GestureGeneration/Speech_driven_gesture_generation_with_autoencoder) with the official implementation of the paper.
