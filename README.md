@@ -2,7 +2,10 @@
 This repository can be used to reproduce our results of applying our model to a new English dataset.
 
 If you want to learn more about the model - this [video](https://youtu.be/Iv7UBe92zrw) is a good start.
+
 For more information about the dataset used we refer to the Trinity Speech-Gesture dataset [website](https://trinityspeechgesture.scss.tcd.ie/)
+
+Example of generate motion can be seen in the [demo video](https://youtu.be/tQLVyTVtsSU).
 
 ## Requirements
 * python 3
