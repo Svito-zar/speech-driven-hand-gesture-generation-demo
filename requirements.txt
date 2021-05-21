@@ -4,7 +4,7 @@ matplotlib
 pandas
 pydub
 scipy
-tensorflow==1.15.4
+tensorflow==2.5.0
 keras
 python_speech_features
 praat-parselmouth
