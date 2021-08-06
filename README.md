@@ -1,5 +1,5 @@
 # Speech-driven Hand Gesture Generation Demo
-This repository can be used to reproduce our results of applying our model to a new English dataset.
+This repository can be used to reproduce our results of applying our model to the English dataset.
 
 If you want to learn more about the model - this [video](https://youtu.be/Iv7UBe92zrw) is a good start.
 
@@ -29,12 +29,18 @@ For training on your own data we refer you to the [original repository](https://
 ## Citation
 Here is the citation of our paper in bib format:
 ```
-@inproceedings{kucherenko2019analyzing,
-  title={Analyzing Input and Output Representations for Speech-Driven Gesture Generation},
-  author={Kucherenko, Taras and Hasegawa, Dai and Henter, Gustav Eje  and Kaneko, Naoshi and Kjellstr{\"o}m, Hedvig},
-  booktitle=={International Conference on Intelligent Virtual Agents (IVA ’19)},
-  year={2019},
-  publisher = {ACM},
+@article{kucherenko2021moving,
+author = {Taras Kucherenko and Dai Hasegawa and Naoshi Kaneko and Gustav Eje Henter and Hedvig Kjellström},
+title = {Moving Fast and Slow: Analysis of Representations and Post-Processing in Speech-Driven Automatic Gesture Generation},
+journal = {International Journal of Human–Computer Interaction},
+volume = {37},
+number = {14},
+pages = {1300-1316},
+year  = {2021},
+publisher = {Taylor & Francis},
+doi = {10.1080/10447318.2021.1883883},
+URL = {https://doi.org/10.1080/10447318.2021.1883883},
+eprint = {https://doi.org/10.1080/10447318.2021.1883883}
 }
 ```
 
